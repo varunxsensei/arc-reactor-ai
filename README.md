@@ -1,106 +1,82 @@
-\documentclass[12pt]{article}
-\usepackage{geometry}
-\usepackage{xcolor}
-\usepackage{hyperref}
-\usepackage{amsmath}
-\usepackage{listings}
-\usepackage{graphicx}
-\usepackage{parskip}
-\geometry{margin=1in}
 
-\hypersetup{
-    colorlinks=true,
-    linkcolor=cyan,
-    filecolor=magenta,      
-    urlcolor=cyan,
-}
+# ⚡ Arc Reactor AI
 
-\title{\Huge \textbf{⚡ Arc Reactor AI}}
-\author{}
-\date{}
+A glowing, futuristic AI assistant built with **LangChain**, **GPT-4o**, and **Streamlit** — featuring domain-specific intelligence, chat memory, and math support inside a sci-fi holographic UI.
 
-\begin{document}
+---
 
-\maketitle
+## ✨ Features
 
-\begin{center}
-\Large A glowing, futuristic chat assistant powered by \textbf{GPT-4o + LangChain}, with domain-specific intelligence, persistent memory, and a beautiful \textbf{Streamlit UI}.
-\end{center}
+- 🧠 Chat with an AI expert in **any domain** (e.g., Physics, AI, Biology)
+- 💬 Persistent **chat history** saved locally (`chat_history.txt`)
+- 📐 Supports **LaTeX-style math rendering** (useful for equations)
+- ⚙️ Built with **LangChain + OpenAI GPT-4o**
+- 🌌 Designed with a **neon Arc Reactor-style UI** in Streamlit
 
-\vspace{1cm}
+---
 
-\section*{✨ Features}
+## 🛠️ Setup
 
-\begin{itemize}
-    \item 🧠 Chat with an AI expert in \textbf{any domain} you define (e.g., \texttt{Finance}, \texttt{Physics}, \texttt{Design}, etc.)
-    \item 💬 Persistent \textbf{chat history} saved locally as \texttt{chat\_history.txt}
-    \item 📐 Supports \LaTeX-style \textbf{math rendering} for technical responses
-    \item ⚙️ Built using \textbf{LangChain} and \textbf{OpenAI GPT-4o}
-    \item 🌌 Designed with a \textbf{neon-holographic Arc Reactor} theme via Streamlit CSS
-    \item 🎯 Modular and easy to extend
-\end{itemize}
+### 1. Clone the repository
 
-\section*{🚀 Demo}
-
-Coming soon: GIF or screenshot preview.
-
-\section*{🛠️ Setup}
-
-\subsection*{1. Clone the Repository}
-\begin{lstlisting}[language=bash]
+```bash
 git clone https://github.com/yourusername/arc-reactor-ai.git
 cd arc-reactor-ai
-\end{lstlisting}
+```
 
-\subsection*{2. Install Dependencies}
-\begin{lstlisting}[language=bash]
+### 2. Install dependencies
+
+```bash
 pip install -r requirements.txt
-\end{lstlisting}
+```
 
-\subsection*{3. Configure API Key}
-Create a \texttt{.env} file with your OpenAI API key:
-\begin{lstlisting}
+### 3. Add your OpenAI API key
+
+Create a `.env` file in the project root:
+
+```bash
 OPENAI_API_KEY=your_openai_key_here
-\end{lstlisting}
+```
 
-\subsection*{4. Run the App}
-\begin{lstlisting}[language=bash]
+### 4. Run the app
+
+```bash
 streamlit run app.py
-\end{lstlisting}
+```
 
-\section*{📦 Folder Structure}
-\begin{verbatim}
+---
+
+## 📂 Folder Structure
+
+```
 arc-reactor-ai/
 ├── app.py
 ├── chat_history.txt
 ├── .env
 ├── requirements.txt
 └── README.md
-\end{verbatim}
+```
 
-\section*{🧩 Tech Stack}
-\begin{itemize}
-    \item \href{https://streamlit.io/}{Streamlit} – for the web UI
-    \item \href{https://www.langchain.com/}{LangChain} – for prompt templating and memory
-    \item \href{https://platform.openai.com/docs}{OpenAI GPT-4o} – the LLM engine
-\end{itemize}
+---
 
-\section*{💡 Use Cases}
-\begin{itemize}
-    \item Ask domain-specific questions (e.g., ``As a biology expert, explain CRISPR'')
-    \item Explore ideas, troubleshoot code, or chat casually
-    \item Learn math, physics, or ML with \LaTeX-rendered outputs
-\end{itemize}
+## 🧩 Tech Stack
 
-\section*{📜 License}
-\textbf{MIT License} – open source and free to modify.
+- [Streamlit](https://streamlit.io/)
+- [LangChain](https://www.langchain.com/)
+- [OpenAI GPT-4o](https://platform.openai.com/docs)
+- `.env` for secrets and `chat_history.txt` for state
 
-\section*{🧠 Future Ideas}
-\begin{itemize}
-    \item Add audio input/output
-    \item Use local LLMs (Mistral, LLaMA via Ollama)
-    \item Deploy online with GitHub Actions
-    \item UI upgrade with animations and 3D background
-\end{itemize}
+---
 
-\end{document}
+## 📜 License
+
+MIT — feel free to fork and enhance.
+
+---
+
+## 🧠 Future Ideas
+
+- 🎙️ Voice input/output
+- 🧠 Local LLM (Mistral, LLaMA via Ollama)
+- 🔄 Full chat session save/load
+- 🌐 Deployment to Hugging Face or Streamlit Cloud
